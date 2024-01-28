@@ -1,0 +1,814 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+
+nav {
+  left: 50%;
+  width: 1366px;
+  transform: translateX(-50%);
+  height: 64px;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 600px;
+  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 9;
+}
+
+.navigation-bar-left img {
+  width: 110px;
+}
+
+.navigation-bar-right {
+  gap: 60px;
+  list-style: none;
+  display: flex;
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ul.navigation-bar-right li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+}
+
+ul.navigation-bar-right li a:hover {
+  transition:.3s ease all;
+  color: #edc968;
+}
+
+/* AKHIR NAVBAR */
+
+/* HEADER */
+.Banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 80px;
+  /* margin-left: 180px; */
+}
+
+.first-content-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-content-left img {
+  width: 380px;
+}
+
+.first-content-left h1 {
+  margin: -1px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.first-content-left h2 {
+  margin: -1px;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.first-content-left button {
+  margin: 30px;
+  background-color: black;
+  color: #e9e9e9;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.24);
+}
+
+.first-content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 630px;
+  margin-right: -150px;
+}
+
+.first-content-background-model {
+  width: 390px;
+  height: 635px;
+  /* background-color: #e4e3da; */
+  opacity: 0.9;
+  margin-right: 125px;
+  filter: blur(10px);
+  /* z-index: 9; */
+}
+
+.first-content-right img {
+  position: absolute;
+  /* height: 590px; */
+}
+/* AKHIR HEADER */
+
+/* SECTION LIST*/
+
+.seccond-content {
+  width: 1349px;
+  height: 450px;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 130px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.seccond-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccond-content-box img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(45%);
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+
+.seccond-content-box p {
+  position: absolute;
+  color: #e9e9e9;
+  font-size: 20px;
+  font-weight: 600;
+  filter: drop-shadow(2px 2px 10px #000);
+  cursor: pointer;
+}
+
+/* AKHIR SECTION LIST */
+
+/* FOR MEN AND WOMEN */
+.for-section {
+  width: 1340px;
+  height: 600px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.for-section h1 {
+  font-size: 40px;
+}
+
+.for-section-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product-card {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  filter: drop-shadow(5px 5px 20px #000);
+}
+
+.product-card img {
+  border-radius: 20px 20px 0px 0px;
+  width: 250px;
+  height: 260px;
+  display: block;
+  object-fit: cover;
+}
+
+.product-card-text {
+  width: 250px;
+  height: 80px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.product-name {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.product-name h1,
+h2 {
+  margin: -1px;
+  font-size: 15px;
+}
+
+.product-name h2 {
+  font-weight: 600;
+}
+
+.product-price {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-right: 5px;
+  position: relative;
+}
+
+.product-price h3 {
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  font-weight: 500;
+}
+
+.product-price .fa-cart-shopping {
+  position: absolute;
+  font-size: 20px;
+  margin-right: 20px;
+  gap: 200px;
+  top: 7px;
+}
+
+.product-price .fa-clipboard {
+  position: absolute;
+  font-size: 20px;
+  margin-right: 60px;
+  gap: 200px;
+  top: 6px;
+  /* padding-right: 30px; */
+}
+
+.fa-sharp {
+  font-size: 100px;
+}
+/* AKHIR FOR MEN AND WOMEN */
+
+/* IMAGESLIDE */
+.imgslide {
+  padding: 70px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 1300px;
+}
+
+.slides {
+  display: flex;
+  width: fit-content;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  flex: 0 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+/* AKHIR IMAGESLIDER */
+
+/* SERVICE */
+.container-service {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.service {
+  display: flex;
+  width: 290px;
+  height: 160px;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.nameService {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-service .imgg {
+  display: flex;
+  width: 130px;
+  height: inherit;
+  background-color: #edc968;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(30%);
+}
+.container-service img {
+  width: 60px;
+  height: 60px;
+}
+
+.Deskription {
+  font-size: 13px;
+}
+
+.Title {
+  font-size: 18px;
+}
+
+/* AKHIR SERVICE */
+
+/* ABOUT */
+.About {
+  padding-top: 70px;
+  width: 1340px;
+  margin: auto;
+}
+
+.top-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 70px; */
+  padding: 70px 50px;
+}
+
+.top-model img {
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  /* padding: 20px; */
+  filter: brightness(25%);
+  border-radius: 50px;
+  box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.24);
+}
+
+.top-model p {
+  position: absolute;
+  font-size: 100px;
+  color: white;
+}
+
+.content-head1,
+.content-head2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: "Inter";
+}
+
+.content-head2 {
+  background-color: #e6e6e6;
+  padding: 25px;
+}
+
+.content-head2 p,
+.content-head1 p {
+  font-size: 20px;
+  padding: 70px 90px;
+}
+
+.content-profile-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4em;
+  margin-bottom: -1em;
+  font-family: "Inter";
+}
+
+.content-profile {
+  width: 1100px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15em;
+  padding: 20px;
+}
+
+.content-profile img {
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-profile p {
+  line-height: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
+}
+
+.npm {
+  opacity: 0.85;
+  margin-top: -10px;
+}
+
+/* AKHIR ABOUT  */
+
+/* CONTACT */
+.container-contact {
+  background-color: rgb(229, 229, 227);
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  /* position: relative; */
+  margin: auto  ;
+}
+
+.container-contact-1 {
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  height: 580px;
+  border-radius: 30px;
+  background: linear-gradient(
+    210deg,
+    rgba(223, 223, 223, 0.4) 0%,
+    rgba(223, 223, 223, 0.1) 100%
+  );
+  box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  margin: 115px;
+  align-items: start;
+  z-index: 2;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-family: "Inter";
+  /* margin-left: 30px; */
+  margin-top: 30px;
+}
+
+.main-content-1,
+.main-content-2,
+.main-content-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  margin: 30px 60px 20px;
+}
+
+.main-content-2 {
+  gap: 105px;
+}
+
+.main-content-3 {
+  gap: 60px;
+}
+
+.main-content-4 {
+  position: relative;
+  margin-left: 310px;
+  height: 611px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-model {
+  position: absolute;
+  width: 575px;
+  display: flex;
+  opacity: 0.2;
+  margin-bottom: 30px;
+}
+
+.content-model-logo {
+  position: absolute;
+  width: 420px;
+  display: flex;
+}
+
+.container-contact-2 {
+  position: absolute;
+  display: flex;
+  width: 1200px;
+  height: 100px;
+  border-radius: 30px;
+  background: linear-gradient(
+    210deg,
+    rgba(223, 223, 223, 0.4) 0%,
+    rgba(223, 223, 223, 0.1) 100%
+  );
+  box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  z-index: 2;
+  margin-top: 760px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seccond-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.seccond-content-1,
+.seccond-content-2,
+.seccond-content-3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+  font-family: "Inter";
+}
+
+.seccond-contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.seccond-contact img {
+  width: 30px;
+}
+
+.seccond-content-4 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  /* margin-left: 100px; */
+}
+
+.container-contact-33 {
+  display: flex;
+  width: 1247px;
+  height: 550px;
+  border-radius: 30px;
+  background: linear-gradient(
+    210deg,
+    rgba(223, 223, 223, 0.4) 0%,
+    rgba(223, 223, 223, 0.1) 100%
+  );
+  box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  margin: 900px 0px 100px;
+
+}
+
+.third-content-13 {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.third-content-13 img {
+  margin-top: 40px;
+  width: 450px;
+}
+
+.third-content-13 h1 {
+  font-family: "Inter";
+  font-size: 45px;
+}
+
+.third-content-13 p {
+  font-family: "Inter";
+}
+
+.third-content33 {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  margin-left: 110px;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.third-content33 p {
+  margin-left: 15px;
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+
+.third-content-44,
+.third-content-55 {
+  /* margin-top: 100px; */
+  gap: 10px;
+  margin: 20px;
+  margin-right: 115px;
+}
+
+.third-content-44 label,
+.third-content-55 label{
+  margin-bottom: 10px;
+}
+
+.third-content-22 label,
+.third-content-33 label{
+  margin-bottom: 10px;
+}
+
+.third-content-22,
+.third-content-33 {
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.nama-email {
+  display: flex;
+  gap: 200px;
+  margin-right: 285px;
+}
+
+.third-content-input {
+  width: 400px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 1em;
+  border: none;
+  font-family: "Inter";
+}
+
+.third-content-input3 {
+  width: 170px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 1em;
+  border: none;
+  font-family: "Inter";
+}
+
+.third-content-input-5 {
+  padding: 11.5px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Inter";
+  width: 405px;
+}
+
+
+.third-content-66 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+  margin-right: 25px;
+}
+
+.third-content-66 button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  width: 95px;
+  height: 35px;
+  font-family: "Inter";
+}
+/* AKHIR CONTACT
+
+/* FOOTER */
+footer {
+    width: 1349px;
+    height: 400px;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    gap: 130px;
+}
+
+.footer-top-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.footer-top-left-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: -15px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo-nama {
+    width: 150px;
+}
+
+.footer-top-left p {
+    width: 500px;
+    font-size: 18px;
+    opacity: 0.60;
+    font-weight: 100;
+}
+
+.footer-top-right {
+    margin-right: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.footer-top-right-1-title, .footer-top-right-2-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-left: 8px;
+}
+
+.footer-top-right-1, .footer-top-right-2 {
+    font-size: 18px;
+}
+
+.footer-top-right p, a {
+    margin: 10px;
+    opacity: 0.60;
+}
+
+.footer-bottom-line {
+    height: 1px;
+    width: 95%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* AKHIR  FOOTER */
